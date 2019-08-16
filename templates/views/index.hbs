@@ -1,0 +1,25 @@
+{{>header}}
+<div class="container-fluid">
+    <h2>{{title}}</h2>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Weather</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/help">Help</a>
+        </li>
+    </ul>
+    <form class="form-inline" id="searchForm">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" id="address" class="form-control" placeholder="Enter Address">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Get Temperature</button>
+    </form>
+    <div>
+        <p id="output"></p>
+    </div>
+</div>
+{{>footer}}
